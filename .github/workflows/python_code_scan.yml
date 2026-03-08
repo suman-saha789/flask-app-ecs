@@ -17,5 +17,11 @@ jobs:
         with:
            python-version: "3.12"
            
+      - name: install linter flake
+        run: pip install flake8
+
+      - name: scan code for syntax
+        run: flake8 app.py
+           
           
   
